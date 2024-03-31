@@ -13,7 +13,6 @@ class DayCounterController extends Controller
 
     public function index()
     {
-        // Calculate the number of days between today and a specific date
         $targetDate = Carbon::create(2023, 12, 31);
         $today = Carbon::now();
         $daysRemaining = $today->diffInDays($targetDate);
